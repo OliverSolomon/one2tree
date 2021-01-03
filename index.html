@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <title>One2trees</title>
 </head>
+
 <body>
     <header class="bg">
         <div class="main-container">
@@ -26,7 +28,8 @@
                 <div class="menu-mobile hide-desktop" onclick="showMenu()">
                     <img src="static/images/menu2.png" alt="menu">
                 </div>
-                <div class="menuList hide-desktop">
+                <div class="menuList hide-desktop" id='menuList'>
+                    <div class="closeMenu" onclick="showMenu()">x</div>
                     <ul>
                         <li><a href="#Home">Home</a></li>
                         <li><a href="#Donate">Donate</a></li>
@@ -56,11 +59,12 @@
             <section class="block hide-mobile">
                 <div class="block-left hide-mobile">
                     <h3>Some Heading</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, asperiores dicta alias incidunt cum quibusdam velit qui, nihil error illo sint. Distinctio consequuntur enim esse, sit magni accusantium ullam id modi porro illum. Aut enim voluptate recusandae a optio, quidem fuga fugiat ullam</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, asperiores dicta alias incidunt cum quibusdam velit qui, nihil error illo sint. Distinctio consequuntur enim esse, sit magni accusantium ullam id modi porro illum.
+                    </p>
                 </div>
                 <div class="block-right hide-mobile">
                     <h3>Some Other Heading</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod facere repellat ipsa, eum perferendis, magnam a itaque ex hic dolorum expedita exercitationem aperiam amet voluptatibus odio eaque accusamus. Eos accusamus adipisci doloremque, similique unde reprehenderit dolores fugit deleniti nostrum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod facere repellat ipsa, eum perferendis, magnam a itaque ex hic dolorum expedita exercitationem aperiam amet voluptatibus odio eaque accusamus. Eos accusamus adipisci.</p>
                 </div>
             </section>
             <div class="tree">
@@ -76,11 +80,13 @@
         <section class="content">
             <div class="content-top">
                 <h3>Some Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, asperiores dicta alias incidunt cum quibusdam velit qui, nihil error illo sint. Distinctio consequuntur enim esse, sit magni accusantium ullam id modi porro illum. Aut enim voluptate recusandae a optio, quidem fuga fugiat ullam</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, asperiores dicta alias incidunt cum quibusdam velit qui, nihil error illo sint. Distinctio consequuntur enim esse, sit magni accusantium ullam id modi porro illum. Aut
+                    enim voluptate recusandae a optio, quidem fuga fugiat ullam</p>
             </div>
             <div class="content-bottom">
                 <h3>Some Other Heading</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod facere repellat ipsa, eum perferendis, magnam a itaque ex hic dolorum expedita exercitationem aperiam amet voluptatibus odio eaque accusamus. Eos accusamus adipisci doloremque, similique unde reprehenderit dolores fugit deleniti nostrum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod facere repellat ipsa, eum perferendis, magnam a itaque ex hic dolorum expedita exercitationem aperiam amet voluptatibus odio eaque accusamus. Eos accusamus adipisci doloremque,
+                    similique unde reprehenderit dolores fugit deleniti nostrum.</p>
             </div>
         </section>
         <!-- <div class="tree2">
@@ -90,4 +96,5 @@
     <!-- <script src="static/main.js"></script> -->
     <script src="static/mobile-menu.js"></script>
 </body>
+
 </html>

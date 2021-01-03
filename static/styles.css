@@ -1,4 +1,5 @@
-.body, *{
+.body,
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,40 +8,38 @@
     scroll-snap-type: y mandatory;
 }
 
-img{
+img {
     /* width: 100%; */
 }
 
-.hide-desktop{
+.hide-desktop {
     display: none;
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
     .hide-mobile {
         display: none;
     }
-    .hide-desktop{
+    .hide-desktop {
         display: block;
     }
-
     /* img {
         width: 100%;
     } */
 }
 
-
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-header{
+header {
     scroll-snap-align: start;
-    background:  url(images/bg.jpg) center no-repeat;
+    background: url(images/bg.jpg) center no-repeat;
     background-size: cover;
     /* width: 100%; */
     height: 100vh;
@@ -48,162 +47,207 @@ header{
     /* overflow: hidden; */
 }
 
-
-.main-container{
+.main-container {
     max-width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-@media (max-width:450px){
-    header{
-        background:  url(images/bg.jpg) no-repeat;
+@media (max-width:450px) {
+    header {
+        background: url(images/bg.jpg) no-repeat;
         background-size: cover;
         overflow: hidden;
     }
-    .main-container{
+    .main-container {
         max-width: 95%;
     }
 }
 
-nav{
-    padding-top:.5em;
+nav {
+    padding-top: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li{
+nav ul li {
     margin: .5em;
     font-size: 1.3rem;
     padding: .5em;
 }
 
-nav ul li:last-child{
+nav ul li:last-child {
     margin-right: 0;
     padding-right: 0;
 }
 
-.menuList{
-    background-color: rgba(0, 255, 0, 0.31);
-    height: 70vh;
+@media (max-width:450px) {
+    nav ul li:last-child {
+        margin-right: .5em;
+        padding-right: .5em;
+    }
+}
+
+.menuList {
+    /* background-color: #fff; */
+    background: url(images/menubg3.jpg) center no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(209, 147, 13, 0.466);
+    height: 95vh;
     width: 100%;
-    display: none;
+    margin: auto;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    z-index: 6;
+    text-align: center;
+    overflow: hidden;
 }
 
-.menuList ul{
+.menuList ul {
+    margin-top: 2em;
     flex-direction: column;
+    align-content: center;
+    color: rgb(83, 109, 13);
 }
 
-.menu-mobile{
-    z-index: 10;
+.menuList ul li {
+    width: 80%;
+    /* text-align: right; */
+    /* margin: 1em, auto; */
+    /* margin-top: 2em; */
+    margin-bottom: 2em;
+    color: #fff;
+    font-weight: 900;
 }
 
-.drop-down{
-    display: block;
+.menuList ul li:hover {
+    background: rgba(255, 255, 255, 0.897);
+    color: #000;
 }
 
-.intro{
+.menu-mobile {
+    /* z-index: 10; */
+}
+
+.drop-down {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+.closeMenu {
+    font-size: 3rem;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.intro {
     font-family: 'Segoe UI';
     position: absolute;
     /* border: 2px solid red; */
-    transform: translate(84%,74%);
+    transform: translate(84%, 74%);
     font-size: 2.5rem;
 }
 
-.intro span{
+.intro span {
     text-transform: uppercase;
     font-size: 4.5rem;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.social{
+.social {
     text-align: center;
     position: absolute;
     left: 0;
     transform: translateY(250%);
+    z-index: 10;
 }
 
-.social ul li{
+.social ul li {
     padding: .3em;
     background: #fff;
     align-items: center;
 }
 
-@media (max-width:450px){
-    .intro{
-        transform:translate(0,0);
+@media (max-width:450px) {
+    .intro {
+        transform: translate(0, 0);
         font-size: 2.5rem;
-        transform: translate(15%,80%);
+        transform: translate(15%, 80%);
     }
-
-    .intro span{
+    .intro span {
         font-size: 4rem;
     }
-
-    .social{
+    .social {
         transform: translateY(350%);
         /* bottom: 0; */
     }
 }
 
-.block{
+.block {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
     bottom: 0;
     transform: translateY(-35%);
     /* bottom: 8rem; */
-
 }
 
-.block div{
-    width:35%;
+.block div {
+    width: 35%;
     background-color: rgba(0, 255, 0, 0.2);
     padding: 2.5em;
 }
 
-.block div p{
-    margin-top:1em;
+.block div p {
+    margin-top: 1em;
 }
 
-.tree{
+.tree {
     /* border: 2px solid red; */
     position: absolute;
     bottom: 0;
     right: 10rem;
 }
 
-@media (max-width:450px){
-    .block{
+@media (max-width:450px) {
+    .block {
         flex-direction: column;
         position: relative;
         transform: translateY(50%);
         z-index: 20;
     }
-    .block div{
+    .block div {
         /* display: none; */
         width: 0%;
     }
 }
 
-.torso{
+.torso {
     scroll-snap-align: start;
     height: 100vh;
-    background:  url(images/bg.jpg) no-repeat;
+    background: url(images/bg.jpg) no-repeat;
     background-size: cover;
     color: #fff;
     font-size: 1rem;
 }
 
-.tree-image{
+.tree-image {
     width: 160%;
     overflow: hidden;
     position: sticky;
@@ -213,44 +257,44 @@ nav ul li:last-child{
     z-index: 12; */
 }
 
-.content{
+.content {
     max-width: 85%;
     margin: auto;
     padding-top: 6em;
 }
 
-.content div{
+.content div {
     background-color: rgba(0, 255, 0, 0.2);
     padding: 1em;
     margin-top: 1em;
 }
 
-@media (max-width:365px){
-    .content{
+@media (max-width:365px) {
+    .content {
         padding-top: 1em;
     }
 }
 
-@media (max-width:320px){
-    .content{
+@media (max-width:320px) {
+    .content {
         padding-top: 1em;
     }
-    .content div{
+    .content div {
         padding: .5em;
     }
 }
 
-.content div p{
-    margin-top:1em;
+.content div p {
+    margin-top: 1em;
 }
 
-.tree2{
+.tree2 {
     position: fixed;
     bottom: 0;
     /* z-index: 0; */
     /* border: 2px solid red; */
 }
 
-.tree2 img{
-     width: 60%;
- }
+.tree2 img {
+    width: 60%;
+}
