@@ -277,7 +277,7 @@ nav ul li:last-child {
 
 @media (max-width:320px) {
     .content {
-        padding-top: 1em;
+        padding-top: .6em;
     }
     .content div {
         padding: .5em;
