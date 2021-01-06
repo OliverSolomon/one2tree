@@ -416,7 +416,7 @@ nav ul li:last-child {
     /* bottom: 5em; */
     /* left: 5em; */
     /* transform: translateX(30%); */
-    transform: translate(3%, 800%);
+    transform: translate(3%, 2300%);
 }
 
 .btnM a {
@@ -429,3 +429,10 @@ nav ul li:last-child {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+
+/* @media (min-width:450px) {
+    .hands {
+        display: none;
+    }
+} */
