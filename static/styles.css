@@ -351,3 +351,13 @@ nav ul li:last-child {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+.hands {
+    position: absolute;
+    /* bottom: 0; */
+    transform: translateY(-10%);
+}
+
+.hands img {
+    width: 100%;
+}
