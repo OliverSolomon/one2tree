@@ -320,44 +320,112 @@ nav ul li:last-child {
 
 .hero .cta {
     position: absolute;
-    border: 2px solid red;
+    transform: translate(80%, 50%);
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    /* align-items: center; */
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .hero .cta p {
     text-align: left;
     font-size: 1.5rem;
     margin-bottom: 1em;
+    /* pre-weighten:10; */
 }
 
 .hero .cta span {
-    font-weight: 900;
-    font-size: 4.5rem;
+    font-weight: bolder;
+    font-size: 6rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: .25em;
+    margin-right: .5em;
 }
 
 .hero .cta .btn {
+    margin-left: 2em;
     /* background: #20680B, #DED81D, #40A728, #1DA279; */
 }
 
 .hero .cta .btn a {
     background: #DED81D;
-    /* margin-top: 1.5em; */
     padding-left: 3em;
     padding-right: 3em;
-    /* padding-top: .5em; */
+    padding-top: .5em;
     padding-bottom: .5em;
-    color: #40A728;
+    color: #2c751b;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 .hands {
+    /* background: url(images/handsWithTree.png) center; */
     position: absolute;
-    /* bottom: 0; */
     transform: translateY(-10%);
 }
 
 .hands img {
     width: 100%;
+}
+
+@media (max-width:450px) {
+    .hero {
+        /* height: 91vh; */
+        width: 100%;
+        overflow: hidden;
+    }
+    .hero .cta {
+        /* position: absolute; */
+        display: none;
+        transform: translate((-10%, 10%));
+        border: 2px solid red;
+        left: 0;
+    }
+    .hands {
+        position: absolute;
+        transform: translateY(34.5%);
+        /* transform: rotate(10deg); */
+        width: 100%;
+        /* overflow: hidden; */
+    }
+}
+
+.ctaM {
+    font-size: 1.2rem;
+    text-align: left;
+    transform: translate(20%, 130%);
+}
+
+.ctaM span {
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .25em;
+    margin-right: .5em;
+}
+
+.ctaM p {
+    margin-bottom: 1.5em;
+}
+
+.btnM {
+    /* position: absolute; */
+    /* bottom: 5em; */
+    /* left: 5em; */
+    /* transform: translateX(30%); */
+    transform: translate(3%, 800%);
+}
+
+.btnM a {
+    background: #DED81D;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: #2c751b;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
