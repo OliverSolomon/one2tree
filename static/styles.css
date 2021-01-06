@@ -82,6 +82,13 @@ nav ul li {
     margin: .5em;
     font-size: 1.3rem;
     padding: .5em;
+    border: 2px inherit solid;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #fff;
+    font-weight: 700;
+    /* transition: .5s; */
 }
 
 nav ul li:last-child {
@@ -297,4 +304,50 @@ nav ul li:last-child {
 
 .tree2 img {
     width: 60%;
+}
+
+
+/*#############################  TORSO #######*/
+
+.hero {
+    scroll-snap-align: start;
+    background: url(images/deskBg.png);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .cta {
+    position: absolute;
+    border: 2px solid red;
+}
+
+.hero .cta p {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.hero .cta span {
+    font-weight: 900;
+    font-size: 4.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .25em;
+}
+
+.hero .cta .btn {
+    /* background: #20680B, #DED81D, #40A728, #1DA279; */
+}
+
+.hero .cta .btn a {
+    background: #DED81D;
+    /* margin-top: 1.5em; */
+    padding-left: 3em;
+    padding-right: 3em;
+    /* padding-top: .5em; */
+    padding-bottom: .5em;
+    color: #40A728;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
