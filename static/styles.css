@@ -53,6 +53,17 @@ header {
     overflow: hidden;
 }
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(-1%); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
+
 @media (max-width:450px) {
     header {
         background: url(images/bg.jpg) no-repeat;
@@ -162,7 +173,19 @@ nav ul li:last-child {
     top: 10px;
 }
 
+@keyframes transitionInIntro {
+    from {
+        opacity: 0;
+        /* transform: translateX(80%); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateX(84%); */
+    }
+}
+
 .intro {
+    /* animation: transitionInIntro 1.75s; */
     font-family: 'Segoe UI';
     position: absolute;
     /* border: 2px solid red; */
@@ -225,7 +248,21 @@ nav ul li:last-child {
     margin-top: 1em;
 }
 
+@keyframes transitionInTree {
+    from {
+        opacity: 0;
+        /* transform: translateY(-1%); */
+        right: 0;
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+        right: 10rem;
+    }
+}
+
 .tree {
+    animation: transitionInIntro 1s;
     /* border: 2px solid red; */
     position: absolute;
     bottom: 0;
@@ -363,7 +400,21 @@ nav ul li:last-child {
     border-top-right-radius: 0%;
 }
 
+@keyframes transitionInHands {
+    from {
+        opacity: 0;
+        transform: translateY(0%);
+        /* right: 0; */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10);
+        /* right: 10rem; */
+    }
+}
+
 .hands {
+    animation: transitionInHands 1s;
     /* background: url(images/handsWithTree.png) center; */
     position: absolute;
     transform: translateY(-10%);
@@ -435,10 +486,10 @@ nav ul li:last-child {
         transform: translate(8%, 100%);
     }
     .btnM {
-        transform: translate(3%, 1700%);
+        transform: translate(3%, 1600%);
     }
     .hands {
-        transform: translateY(30%);
+        transform: translateY(28%);
     }
 }
 
@@ -447,9 +498,9 @@ nav ul li:last-child {
         transform: translate(8%, 90%);
     }
     .btnM {
-        transform: translate(2%, 1500%);
+        transform: translate(2%, 1400%);
     }
     .hands {
-        transform: translateY(25%);
+        transform: translateY(23%);
     }
 }
